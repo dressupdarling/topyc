@@ -45,5 +45,5 @@ imageBitsPerPx = int(input("Number of bits per pixel (e.g. 24): "))
 numberOfBytes = calcImageSize(imageWidthPx, imageHeightPx,imageBitsPerPx)
 
 # Fix the logic error on original line 45
-numberOfKiB = numberOfBytes * BYTES_PER_KIBIBYTE
+numberOfKiB = numberOfBytes / BYTES_PER_KIBIBYTE
 print("The image file size is", numberOfBytes, "bytes or", numberOfKiB, "KiB")
